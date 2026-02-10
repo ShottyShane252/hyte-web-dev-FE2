@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Design</title>
+    <style>
+        /*Desktop ensin*/
+        body {
+          background-color: white;
+
+        }
+
+        @media screen and (min-width: 600px) {
+          body {
+            background-color: lightblue;
+          }
+
+        }
+
+      @media screen and (min-width: 800px) {
+          body {
+            background-color: lightgreen;
+          }
+        }
+      @media screen and (min-width: 700px) and (max-width: 800px) {
+          body {font-size: 30px;
+          }
+
+        }
+        @media screen and (min-width: 720px) {
+        }
+        #bta{
+          height: 100px;
+          width: auto;
+        }
+
+          #taustakuva{
+          width: 50%;
+          height: 500px;
+          background-color: lightcyan;
+          background-image: url(background.jpg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          /*
+          background-attachment: fixed;
+          background-origin: padding-box;
+          background-clip: border-box;
+          */
+
+        }
+        #kissa2{
+          height: 100px;
+          width: auto;
+        }
+      
+
+
+    </style>
+  </head>
+  <body>
+    <h3>Responsive Web Design</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula,
+      risus sit amet convallis cursus, justo erat facilisis urna, nec laoreet
+      enim nisl a nunc. Sed euismod, urna eu tincidunt consectetur, nisi nisl
+      aliquam nunc, eget aliquam nisl nunc eu nunc. Vivamus fringilla, nunc at
+      aliquam lacinia, nunc nisl aliquet nunc, eu aliquet nunc nisl eu
+      nunc.lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+      vehicula, risus sit amet convallis cursus, justo erat facilisis urna, nec
+      laoreet enim nisl a nunc. Sed euismod, urna eu tincidunt consectetur, nisi
+      nisl aliquam nunc, eget aliquam nisl nunc eu nunc. Vivamus fringilla, nunc
+      at aliquam lacinia, nunc nisl aliquet nunc, eu aliquet
+    </p>
+    <img id="bta" src="BTA2.jpg" alt="bta"/>
+    <img id="kissa2" src="cat.jpg" alt="kissa"/>
+
+    <h3>TAUSKAKUVA</h3>
+    <div id="taustakuva" >
+
+    </div>
+  </body>
+</html>

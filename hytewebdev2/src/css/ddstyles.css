@@ -1,0 +1,240 @@
+/*RESET*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dbe5f3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*NAV BAR STYLES*/
+
+.site-header {
+  background-color: #2c3e50;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0rem;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo h1 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.tagline {
+  color: #bdc3c7;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.main-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  /*TARPEETON*/
+  background-color: rgba(255, 255, 255, 0.071);
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* värjää MIllä sivulla ollaan*/
+.nav-link.active {
+  background-color: #3498db70;
+  box-shadow: 0 2px 5px rgba(52, 152, 219, 0.3);
+}
+
+/*HERO BANNER*/
+.hero-banner {
+  height: 50vh;
+  /*Puolet näytöst*/
+  width: 100%;
+  background-image: url("/src/img/hero-banner2.jpg"); /*Luo img folder ja korjaa path*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #dbe5f3;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/*MAIN CONTENT*/
+
+.main-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex: auto;
+}
+
+.feature-card p {
+  text-indent: 0.2rem;
+}
+
+/*FOOTER*/
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  color: #bdc3c7;
+  font-size: 1rem;
+  background-color: #2c3e50;
+}
+
+/*BREAKPOINTS*/
+
+/*TABLTETS*/
+@media (max-width: 1024px) {
+  .main-content {
+    max-width: 1024px;
+    padding: 2.5rem;
+  }
+
+  .header-content {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/*Tablet/puhelin väli*/
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  .main-nav {
+    position: static;
+    left: auto;
+    transform: none;
+    width: 100%;
+  }
+
+  .nav-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .nav-link{
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-banner {
+    height: 40vh;
+  }
+  .main-content {
+    padding: 2rem;
+    margin: 1.5rem auto;
+  }
+
+  h1 {font-size: 2rem;}
+  h2 {font-size: 1.6rem;}
+  h3 {font-size: 1.3rem;}
+
+}
+
+
+/*Puhelin*/
+@media (max-width: 480px) {
+  .header-content {
+    gap: 0.7rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 90%;
+    text-align: center;
+    padding: 0.6rem;
+  }
+
+    .hero-banner {
+      height: 35vh;
+    }
+
+    .logo h1 {
+      font-size: 1.4rem;
+    }
+
+    .tagline {
+      font-size: 0.8rem;
+    }
+
+    .main-content {
+      padding: 1.5rem;
+      margin: 1rem auto;
+      border-radius: 6px;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
