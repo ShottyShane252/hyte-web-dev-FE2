@@ -2,6 +2,8 @@ import { fetchData } from "./fetch.js";
 
 const apiurl = 'http://localhost:3000/api';
 
+//RENDERÖI LISTA
+
 const renderFruitList = (items) => {
   console.log('Teen kohta listan');
 
@@ -16,9 +18,63 @@ const renderFruitList = (items) => {
     fruitlist.appendChild(li);
   });
 };
+
+//REnderöi listaaan items
+
+// 🔥 TAULUKON GENEROINTI
+
+const renderItemsTable = (items) => {
+  console.log('Generoidaan taulukko');
+
+  const tbody = document.querySelector('.tbody');
+  if (!tbody) {
+    console.error('tbody element ei löydy');
+    return;
+  }
+
+  tbody.innerHTML = '';
+
+  items.forEach((item) => {
+
+    const tr = document.createElement('tr');
+
+    // NAME
+    const nameTd = document.createElement('td');
+    nameTd.textContent = item.name;
+
+    // INFO BUTTON
+    const infoTd = document.createElement('td');
+    const infoBtn = document.createElement('button');
+    infoBtn.textContent = 'Info';
+    infoBtn.classList.add('check');
+    infoBtn.dataset.id = item.id;
+    infoTd.appendChild(infoBtn);
+
+    // DELETE BUTTON
+    const deleteTd = document.createElement('td');
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'Delete';
+    deleteBtn.classList.add('del');
+    deleteBtn.dataset.id = item.id;
+    deleteTd.appendChild(deleteBtn);
+
+    // ID
+    const idTd = document.createElement('td');
+    idTd.textContent = item.id;
+
+    tr.appendChild(nameTd);
+    tr.appendChild(infoTd);
+    tr.appendChild(deleteTd);
+    tr.appendChild(idTd);
+
+    tbody.appendChild(tr);
+  });
+};
+
+
 // GET items
 const getItems = async () => {
-  const items = await fetchData('http://localhost:3000/api/items');
+  const items = await fetchData(`${apiurl}/items`);
 
   // jos BE puolelta tulee virhe niin informoidaan
   // joko consoleen tai käyttäjälle virheestä
@@ -34,6 +90,7 @@ const getItems = async () => {
   // });
 
   renderFruitList(items);
+  renderItemsTable(items);
 };
 
 // GET itemsbyid
@@ -48,7 +105,7 @@ const getItemById = async (event) => {
 const itemId = idInput.value;
 console.log(itemId);
 
-  const url =(`http://localhost:3000/api/items/${itemId}`);
+  const url =(`${apiurl}/items/${itemId}`);
 
   const options = {
     method: 'GET',
@@ -89,10 +146,10 @@ if (!confirmed) {
   return;
 }
 
-const url =(`http://localhost:3000/api/items/${itemId}`);
+const url =(`${apiurl}/items/${itemId}`);
 
   const options = {
-    method: 'delete',
+    method: 'DELETE',
   };
   const items = await fetchData(url,options);
 
@@ -114,7 +171,7 @@ await getItems();
 
 };
 
-//POST item
+//POST item (ADD)
 
 const addItem = async (event) => {
   console.log('Lisätään uusi item');
@@ -135,7 +192,7 @@ const body = {
   weight: fruitWeight
 };
 
-  const url =(`http://localhost:3000/api/items/`);
+  const url =(`${apiurl}/items/`);
 
   const options = {
     method: 'POST',
@@ -164,6 +221,25 @@ const body = {
 //2.Käyttäjälle alert
   alert(`Item added: ${fruitName}`);
 };
+
+// 🔥 TABLE BUTTON EVENT LISTENER
+
+document.addEventListener('click', async (event) => {
+
+  if (event.target.classList.contains('check')) {
+    const id = event.target.dataset.id;
+    alert(`Info item ID: ${id}`);
+  }
+
+  if (event.target.classList.contains('del')) {
+    const id = event.target.dataset.id;
+    await fetchData(`${apiurl}/items/${id}`, {
+      method: 'DELETE'
+    });
+    await getItems();
+  }
+
+});
 
 export { getItems,getItemById, deleteItemById,addItem };
 
