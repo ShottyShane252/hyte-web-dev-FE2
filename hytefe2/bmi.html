@@ -1,0 +1,88 @@
+
+<!-- Sivuston layout inspiraatio -->
+<!-- https://dribbble.com/shots/23369008-Gym-Fitness-Landing-Page -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dear diary - BMI Index</title>
+    <link rel="stylesheet" href="/src/css/ddstyles.css">
+    <link rel="stylesheet" href="/src/css/mobile.css">
+    </head>
+  <body>
+    <!---------------->
+    <!-- Navigation -->
+
+    <header class="site-header">
+  <div class="header-content">
+    <div class="logo">
+      <h1>Dear Diary</h1>
+      <p class="tagline">Your Personal Health Journal</p>
+    </div>
+
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="bmi.html" class="nav-link active">BMI</a></li>
+        <li><a href="contacts.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner"></div>
+
+    <main class="main-content">
+        <img src="/src/img/bmi.jpeg" alt="BMI Index chart"/>
+        <h2>Painoindeksilaskuri / BMI-laskuri</h2>
+        <p class="description">
+          Painoindeksilaskurilla voit laskea pituuden ja painon perustella
+          painoindeksin (BMI, Body Mass Index).
+        </p>
+
+        <form action="">
+          <label for="weight">Anna painosi:</label>
+          <input type="text" id="weight" name="weight" placeholder="kg" />
+          <label for="height">Anna pituutesi:</label>
+          <input type="text" id="height" name="height" placeholder="cm" />
+          <button type="submit" class="btn calculate">Laske indeksi</button>
+        </form>
+
+        <section class="bmi-table">
+          <p>Mittaustuloksesi: <span class="bmi-score">0</span></p>
+
+          <table id="bmiTbl" class="table table-bordered">
+            <tbody>
+              <tr class="bmi0-19">
+                <td>Alipaino</td>
+                <td>0 - 18.9</td>
+              </tr>
+              <tr class="bmi19-25">
+                <td>Normaali paino</td>
+                <td>19 - 24.9</td>
+              </tr>
+              <tr class="bmi25-30">
+                <td>Ylipaino</td>
+                <td>25.0 - 40.0 tai enemmän</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>
+            〽️ Analyysi:
+            <span class="analysis">Tähän saat analyysin BMI tuloksestasi</span>
+          </p>
+        </section>
+    </main>
+    <footer class="site-footer">
+  <p>&copy;shottyshane</p>
+  <p class="footer-note">PLACE HOLDER FOOTER TEXT</p>
+</footer>
+  </body>
+  <script type="module" src="/src/js/bmi.js"></script>
+  <script type="module" src="/src/js/loggedUser.js"></script>
+</html>
