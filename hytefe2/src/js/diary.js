@@ -1,3 +1,7 @@
+// Käytin tämän projektin kehityksessä tekoälyä  tukena
+// virheiden etsimisessä ja koodin parantamisessa.
+// Tarkempi kuvaus AI:n käytöstä löytyy README-tiedostosta.
+
 import '../css/ddstyles.css';
 import '../css/mobile.css';
 //import 'src/css/diary-card.css';
@@ -26,12 +30,13 @@ const renderEntries = (entries) => {
     div.classList.add('entry-card');
 
     div.innerHTML = `
-      <h4>${entry.entry_date}</h4>
-      <p>Mood: ${entry.mood}</p>
-      <p>Sleep: ${entry.sleep_hours} hours</p>
-      <p>${entry.notes}</p>
-      <button data-id="${entry.entry_id}" class="delete-btn">Delete</button>
-    `;
+  <h4>${entry.entry_date}</h4>
+  <p>Mood: ${entry.mood}</p>
+  <p>Sleep: ${entry.sleep_hours} hours</p>
+  <p>${entry.notes}</p>
+  <button data-id="${entry.entry_id}" class="view-btn">View</button>
+  <button data-id="${entry.entry_id}" class="delete-btn">Delete</button>
+`;
 
     entriesList.appendChild(div);
   });
@@ -51,6 +56,24 @@ const getEntries = async () => {
   }
 
   renderEntries(entries);
+};
+
+const getEntryById = async (id) => {
+
+  const options = {
+    headers
+  };
+
+  const entry = await fetchData(`${apiUrl}/${id}`, options);
+
+  if (entry.error) {
+    console.error(entry.error);
+    return;
+  }
+
+  alert(
+    `Date: ${entry.entry_date}\nMood: ${entry.mood}\nSleep: ${entry.sleep_hours} hours\nNotes: ${entry.notes}`
+  );
 };
 
 const addEntry = async (event) => {
@@ -103,6 +126,13 @@ const deleteEntry = async (id) => {
 };
 
 document.addEventListener('click', (event) => {
+
+  if (event.target.classList.contains('view-btn')) {
+
+    const id = event.target.dataset.id;
+
+    getEntryById(id);
+  }
 
   if (event.target.classList.contains('delete-btn')) {
 
