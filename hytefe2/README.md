@@ -75,3 +75,22 @@ DELETE /api/entries/:id
 ![Diary](src/img/DDdiary.png)
 ## BMI laskuri
 ![BMI](src/img/DDBMI.png)
+
+
+
+## Tehtävien dokumentointi
+
+### Robot Framework -asennus
+
+Projektia varten asennettiin seuraavat työkalut:
+
+- Robot Framework
+- Browser Library
+- Requests Library
+- CryptoLibrary
+- Robotidy
+
+Asennus tehtiin VS Coden terminaalissa pip-komentojen avulla.
+Lisätiedot löytyvät tiedostosta:
+
+[Asennusdokumentaatio](docs/asennus.md)
