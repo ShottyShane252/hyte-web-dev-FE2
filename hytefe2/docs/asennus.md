@@ -1,19 +1,55 @@
-# Robot Framwork asennus
+# Robot Framework asennus
 
-# Kuvaus
+## Kuvaus
 Asensin seuraavat työkalut:
 
 - Robot Framework
 - Browser Library
-- Requests library
+- Requests Library
 - CryptoLibrary
 - Robotidy
 
-Käytin VS code terminaalia pip install komennolla
+Käytin VS Code terminaalia pip install komennolla
 
-Asensin ne näillä komennoilla
-pip install robotframwork
-pip install robotframwork-browser
-pip install robotframwork-request
-pip install robotframwork-crypto
-pip install robotframwork-tidy
+---
+## Asennus
+Suoritin seuraavat komennot:
+
+```bash
+pip install robotframework
+pip install robotframework-browser
+pip install robotframework-requests
+pip install robotframework-crypto
+pip install robotframework-tidy
+```
+
+## Virtuaaliympäristö (.venv)
+
+ Loin projektiin virtuaaliympäriston komennolla:
+```bash
+python -m venv .venv
+```
+
+ Aktivoin sen
+ ```bash
+.venv\Scripts\activate
+```
+ Päivitin pipin:
+```bash
+python -m pip install --upgrade pip
+```
+ Alustin Browser Libraryn komenolla:
+```bash
+rfbrowser init
+```
+ Tarkistin Robot Framework version komennolla:
+```bash
+python -m robot --version
+```
+ Loin riippuvuustiedoston:
+ ```bash
+pip freeze | Out-File -Encoding utf8 requirements.txt
+```
+Hain komennon tekoälyltä koska pip freeze > requirements.txt ei tulostanut oikeaa tietoa tiedostoon
+
+
