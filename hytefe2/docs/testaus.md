@@ -137,3 +137,20 @@ ja Keywords.robot tiedostoon
 ${Username}    crypt:xxxxxxxxxxxx
 ${Password}    crypt:yyyyyyyyyyyy
 ```
+## Päiväkirjamerkinnän testaus Tehtävä 4
+
+Testin toiminta
+- Avaa sovelluksen (Dear Diary)
+- Kirjautuu sisään
+- Siirtyy Diary sivulle
+- Täyttää päiväkirjamerkinnät
+ - date, mood, sleep, notes
+- Tallentaa merkinnän painamalla SaveEntry painikketta
+Testin komennot
+```robot
+Fill Text      id=entryDate    2026-03-31
+Select Options By    id=mood    value    great
+Fill Text      id=sleep    8
+Fill Text      id=notes    This entry was made by robot!!
+Click          css=button[type="submit"]
+```
