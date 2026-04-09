@@ -29,10 +29,10 @@ dist-ssr
 __pycache__/
 
 #RobotFramework outputs
-outputs/
-output.xml
-log.html
-report.html
+outputs/*
+!outputs/output.xml
+!outputs/log.html
+!outputs/report.html
 
 
 
