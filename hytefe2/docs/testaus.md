@@ -2,7 +2,7 @@
 
 ## Tehtävä 1 - Robot Framework asennus
 
-## Kuvaus
+ Kuvaus
 Asensin seuraavat työkalut:
 
 - Robot Framework
@@ -14,7 +14,7 @@ Asensin seuraavat työkalut:
 Käytin VS Code terminaalia pip install komennolla
 
 ---
-## Asennus
+ Asennus
 Suoritin seuraavat komennot:
 
 ```bash
@@ -25,7 +25,7 @@ pip install robotframework-crypto
 pip install robotframework-tidy
 ```
 
-## Virtuaaliympäristö (.venv)
+Virtuaaliympäristö (.venv)
 
  Loin projektiin virtuaaliympäriston komennolla:
 ```bash
@@ -53,9 +53,7 @@ python -m robot --version
 pip freeze | Out-File -Encoding utf8 requirements.txt
 ```
 Hain komennon tekoälyltä koska pip freeze > requirements.txt ei tulostanut oikeaa tietoa tiedostoon
-
 ##  Tehtävä 3 - Web Form -testaus
-
 
 Testasin WebForm esimerkkisivua eteenpäin lisäsin automaatioon pari testiä lisää
 - dropdown valikko
@@ -67,7 +65,7 @@ Select Options By    [name="my-select"]    value    2
 Check Checkbox    selector=[id="my-check-2"]
 ```
 
-## .env tiedoston luonti
+ .env tiedoston luonti
 Loin .env-tiedoston projektin juureen
 .env.sample tiedoston sisältö:
 
@@ -102,7 +100,7 @@ Log    ${API_KEY}
 Log    ${BASE_URL}
 ```
 
-## Tietojen salaaminen
+ Tietojen salaaminen
 CryptoLibrary tietojen salaamiseen
 asensin komennolla:
 ```bash
@@ -186,7 +184,6 @@ Variables    load_env.py
 Linkit:
 - [testit](test/front/)
 - [tulokset](outputs/)
-
 ## Tehtävä 6 - Tietojen salaaminen CryptoLibrarylla
 
 Tässä tehtävässä salasin käyttäjätunnuksen ja salasanan CryptoLibraryn avulla.
@@ -227,3 +224,15 @@ Library    CryptoLibrary    variable_decryption=True
 ```
 
 - [tulokset](outputs/)
+## Tehtävä 7
+Parin ensimmäisen tehtävän aikana huomasin että testaukset tallentavat tiedostoja esim.playwright-log-1774342903702113800.txt ja mietin heti että tämä ei voi olla paras käytäntö varsinki kun minulla on terveys sovellukseni myös samassa projekti kansiossa. Kysyin tekoälyltä joka ehdotti minulle komentoa joka ohjaa turhat output tiedostot suoraa outputs-kansioon.
+Käytän tätä komentoa aina kun ajan testin muutan tiedoston nimeä tarpeen mukaan mutta loppuosa komennosta pysyy samana
+Komento:
+```bash
+robot -d outputs test/front/browser_demo.robot
+```
+Myös tiedostot
+- output.xml
+- log.html
+- report.html
+ tallentutuvat suoraan [outputs](outputs/) kansioon
