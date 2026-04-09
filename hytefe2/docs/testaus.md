@@ -1,6 +1,6 @@
 # Testaus tehtävät
 
-## Robot Framework asennus
+## Tehtävä 1 - Robot Framework asennus
 
 ## Kuvaus
 Asensin seuraavat työkalut:
@@ -54,7 +54,7 @@ pip freeze | Out-File -Encoding utf8 requirements.txt
 ```
 Hain komennon tekoälyltä koska pip freeze > requirements.txt ei tulostanut oikeaa tietoa tiedostoon
 
-##  Web Form -testaus
+##  Tehtävä 3 - Web Form -testaus
 
 
 Testasin WebForm esimerkkisivua eteenpäin lisäsin automaatioon pari testiä lisää
@@ -137,7 +137,7 @@ ja Keywords.robot tiedostoon
 ${Username}    crypt:xxxxxxxxxxxx
 ${Password}    crypt:yyyyyyyyyyyy
 ```
-## Päiväkirjamerkinnän testaus Tehtävä 4
+## Tehtävä 4 - Päiväkirjamerkinnän testaus
 
 Testin toiminta
 - Avaa sovelluksen (Dear Diary)
@@ -154,3 +154,76 @@ Fill Text      id=sleep    8
 Fill Text      id=notes    This entry was made by robot!!
 Click          css=button[type="submit"]
 ```
+## Tehtävä 5 - Kirjautuminen .env-tiedostolla
+
+Loin .env-tiedoston projektin juureen.
+
+.env-tiedoston sisältö:
+
+```bash
+USERNAME=oma_kayttajatunnus
+PASSWORD=oma_salasana
+```
+```bash
+pip install python-dotenv
+```
+Loin tiedoston load_env.py, joka lukee ympäristömuuttujat:
+```python
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+Username = os.getenv("USERNAME")
+Password = os.getenv("PASSWORD")
+```
+Lisäsin muuttujat Robot Frameworkiin:
+```robot
+*** Settings ***
+Variables    load_env.py
+```
+
+Linkit:
+- [testit](test/front/)
+- [tulokset](outputs/)
+
+## Tehtävä 6 - Tietojen salaaminen CryptoLibrarylla
+
+Tässä tehtävässä salasin käyttäjätunnuksen ja salasanan CryptoLibraryn avulla.
+
+Asensin CryptoLibraryn:
+
+```bash
+pip install --upgrade robotframework-crypto
+```
+
+Generoin avainparin:
+
+```bash
+python -m CryptoLibrary
+```
+Valitsin:
+ - Open Config
+ - Configure key pair
+ - Generate key pair
+
+ Salasin käyttäjätunnuksen ja salasanan:
+ ```bash
+ python -m CryptoClient
+ ```
+Sain tulokseksi salatut merkkijonot, jotka lisäsin Keywords.robot tiedostoon:
+
+```robot
+*** Variables ***
+${Username}    crypt:xxxxxxxxxxxx
+${Password}    crypt:yyyyyyyyyyyy
+```
+Otin CryptoLibraryn käyttöön Robot Frameworkissa:
+
+```robot
+*** Settings ***
+Library    Browser
+Library    CryptoLibrary    variable_decryption=True
+```
+
+- [tulokset](outputs/)
