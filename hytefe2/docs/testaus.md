@@ -235,4 +235,4 @@ Myös tiedostot
 - output.xml
 - log.html
 - report.html
- tallentutuvat suoraan [outputs](outputs/) kansioon
+ tallentutuvat suoraan [outputs](../outputs/) kansioon
