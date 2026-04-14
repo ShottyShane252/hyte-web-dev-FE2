@@ -238,4 +238,8 @@ Myös tiedostot
  tallentutuvat suoraan [outputs](../outputs/) kansioon
 ## Tehtävä 8 Github.io
 
-
+Tässä tehtävässä julkaisin testien raportit Github Pageissa
+Asetin sen käyttämään testaus2 haaraa ja juurkansiota (/root)
+Raportit löydät näistä linkeistä:
+- [log](../hytefe2/outputs/log.html)
+- [report](../hytefe2/outputs/report.html)
