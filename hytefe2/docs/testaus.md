@@ -224,7 +224,7 @@ Library    CryptoLibrary    variable_decryption=True
 ```
 
 - [tulokset](outputs/)
-## Tehtävä 7
+## Tehtävä 7 Lokitidostot outputs kansioon
 Parin ensimmäisen tehtävän aikana huomasin että testaukset tallentavat tiedostoja esim.playwright-log-1774342903702113800.txt ja mietin heti että tämä ei voi olla paras käytäntö varsinki kun minulla on terveys sovellukseni myös samassa projekti kansiossa. Kysyin tekoälyltä joka ehdotti minulle komentoa joka ohjaa turhat output tiedostot suoraa outputs-kansioon.
 Käytän tätä komentoa aina kun ajan testin muutan tiedoston nimeä tarpeen mukaan mutta loppuosa komennosta pysyy samana
 Komento:
@@ -236,3 +236,6 @@ Myös tiedostot
 - log.html
 - report.html
  tallentutuvat suoraan [outputs](../outputs/) kansioon
+## Tehtävä 8 Github.io
+
+
