@@ -238,7 +238,8 @@ Esimerkkipolku:
 ## Tehtävä 8 Github.io
 
 Tässä tehtävässä julkaisin testien raportit Github Pageissa
-Asetin sen käyttämään testaus2 haaraa ja juurkansiota (/root)
+Asetin sen käyttämään testaus2 haaraa ja juurikansiota (/root)
+
 Raportit löydät näistä linkeistä:
 - [log](../hytefe2/outputs/log.html)
 - [report](../hytefe2/outputs/report.html)
