@@ -2,7 +2,7 @@
 
 ## Tehtävä 1 - Robot Framework asennus
 
- Kuvaus
+### Kuvaus
 Asensin seuraavat työkalut:
 
 - Robot Framework
@@ -14,7 +14,7 @@ Asensin seuraavat työkalut:
 Käytin VS Code terminaalia pip install komennolla
 
 ---
- Asennus
+### Asennus
 Suoritin seuraavat komennot:
 
 ```bash
@@ -25,7 +25,7 @@ pip install robotframework-crypto
 pip install robotframework-tidy
 ```
 
-Virtuaaliympäristö (.venv)
+### Virtuaaliympäristö (.venv)
 
  Loin projektiin virtuaaliympäriston komennolla:
 ```bash
@@ -53,148 +53,136 @@ python -m robot --version
 pip freeze | Out-File -Encoding utf8 requirements.txt
 ```
 Hain komennon tekoälyltä koska pip freeze > requirements.txt ei tulostanut oikeaa tietoa tiedostoon
+##  Tehtävä 2 - Kirjautumistesti
+
+### Kuvaus
+Tässä tehtävässä toteutin automaattisen kirjautumistestin sovelluksellani käyttäen Robot Frameworkkia
+Testissä
+- Avataan login-sivu
+- Syötetään käyttäjätunnus ja salasana
+- Suoritetaan kirjautuminen painamlla nappia
+
+### Linkit
+- [Testi](../test/front/task2.robot)
+- [Log](../outputs/task2/log.html)
+- [Report](../outputs/task2/report.html)
 ##  Tehtävä 3 - Web Form -testaus
 
-Testasin WebForm esimerkkisivua eteenpäin lisäsin automaatioon pari testiä lisää
-- dropdown valikko
-- checkbox
+### Kuvaus
+Tässä tehtävässä testasin Web Form esimerkki ja sen eri toimintojen käyttöä
 
-Komennoilla:
-```bash
-Select Options By    [name="my-select"]    value    2
-Check Checkbox    selector=[id="my-check-2"]
+---
+
+### Testin toiminta
+
+Testissä toteutuin
+- Sivun avaus
+- Valittiin arvo dropdown-valikosta
+- Valittiin checkbox
+
+---
+
+### Testin komennot
+```robot
+    Select Options By    [name="my-select"]    value    2
+    Check Checkbox    selector=[id="my-check-2"]
 ```
 
- .env tiedoston luonti
-Loin .env-tiedoston projektin juureen
-.env.sample tiedoston sisältö:
+### Linkit
 
-```bash
-API_KEY=mysecretapikey
-BASE_URL=http://localhost:3000
-```
-Asensin kirjaston:
-
-```bash
-pip install python-dotenv
-```
-Loin tiedoston load_env.py
-Tiedoston sisältö:
-```bash
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
-API_KEY = os.getenv('API_KEY')
-BASE_URL = os.getenv('BASE_URL')
-```
-Lisäsin muuttujat robottiin
-
-```bash
-*** Settings ***
-Variables    load_env.py
-```
-```bash
-Log    ${API_KEY}
-Log    ${BASE_URL}
-```
-
- Tietojen salaaminen
-CryptoLibrary tietojen salaamiseen
-asensin komennolla:
-```bash
-pip install --upgrade robotframework-crypto
-```
-generoin avaimet:
-```bash
-python -m CryptoLibrary
-```
-Valitsin:
-- Open Config
-- Configure key pair
-- Generate key pair
-
-Syötin salattavat tiedot (Käyttjätunnus ja salasana)
-```bash
-python -m CryptoClient
-```
-
-sain tulokseksi häshätyn merkkijonon
-syötin ne
-[Keywords.robot](../test/front/Keywords.robot)tiedostoon
-
-```bash
-*** Settings ***
-Library    Browser
-Library    CryptoLibrary    variable_decryption=True
-```
-ja Keywords.robot tiedostoon
-```bash
-*** Variables ***
-${Username}    crypt:xxxxxxxxxxxx
-${Password}    crypt:yyyyyyyyyyyy
-```
+[Testi](../test/front/task3.robot)
+[Log](../outputs/task3/log.html)
+[Report](../outputs/task3/report.html)
 ## Tehtävä 4 - Päiväkirjamerkinnän testaus
 
-Testin toiminta
+### Kuvaus
+Tässä tehätävässä täytin sovellukseni päiväkirjaan yhden merkinnän
+
+### Testin toiminta
 - Avaa sovelluksen (Dear Diary)
 - Kirjautuu sisään
 - Siirtyy Diary sivulle
 - Täyttää päiväkirjamerkinnät
- - date, mood, sleep, notes
+- date, mood, sleep, notes
 - Tallentaa merkinnän painamalla SaveEntry painikketta
 Testin komennot
 ```robot
 Fill Text      id=entryDate    2026-03-31
 Select Options By    id=mood    value    great
 Fill Text      id=sleep    8
-Fill Text      id=notes    This entry was made by robot!!
+Fill Text      id=notes    Task 4 robot entry second attempt
 Click          css=button[type="submit"]
 ```
+
+[Testi](../test/front/task4.robot)
+[Log](../outputs/task4/log.html)
+[Report](../outputs/task4/report.html)
 ## Tehtävä 5 - Kirjautuminen .env-tiedostolla
 
-Loin .env-tiedoston projektin juureen.
+### Kuvaus
+Tässä tehtävssä toteutin kirjautumisen käyttämällä muuttujia jotka säilytin .env tiedostossa
+Tätä metodia on järkevä käyttää koska TIETOTURVALLISUUS
 
-.env-tiedoston sisältö:
+#### .env tiedoston luonti
+Loin .env-tiedoston joka sisältää käyttäjätiedot projektin juureen.
+
+.env-tiedoston sisältö(Korvattu .env.sample tiedoilla):
 
 ```bash
-USERNAME=oma_kayttajatunnus
-PASSWORD=oma_salasana
+APP_USERNAME=oma_kayttajatunnus
+APP_PASSWORD=oma_salasana
 ```
+Latasin python-dotenv komenolla:
+
 ```bash
 pip install python-dotenv
 ```
 Loin tiedoston load_env.py, joka lukee ympäristömuuttujat:
+
 ```python
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
-Username = os.getenv("USERNAME")
-Password = os.getenv("PASSWORD")
+Username = os.getenv("APP_USERNAME")
+Password = os.getenv("APP_PASSWORD")
+
 ```
 Lisäsin muuttujat Robot Frameworkiin:
+
 ```robot
 *** Settings ***
 Variables    load_env.py
 ```
 
+Testissä käytin muuttijia näin
+```robot
+Type Text      id=login-username    ${Username}
+Type Secret    id=login-password    $Password
+```
+Huomio! tekoäly neuvoi asettamaan salasan myöskin muotoon:
+
+```robot
+Type Secret    id=login-password    ${Password}
+```
+Mutta se ei suostunut asettamaan salasanaa kenttään joten valitsen ensimmäisen vaihtoehdon jolloin testi suoriutui
+
+
 Linkit:
-- [testit](test/front/)
-- [tulokset](outputs/)
+[Testit](../test/front/task5.robot)
+[Log](../outputs/task5/log.html)
+[Report](../outputs/task5/report.html)
 ## Tehtävä 6 - Tietojen salaaminen CryptoLibrarylla
+
+### Kuvaus
 
 Tässä tehtävässä salasin käyttäjätunnuksen ja salasanan CryptoLibraryn avulla.
 
-Asensin CryptoLibraryn:
 
-```bash
-pip install --upgrade robotframework-crypto
-```
+### Avainten luonti
 
-Generoin avainparin:
+Loin CryptoLibraryn avainparin komenolla:
 
 ```bash
 python -m CryptoLibrary
@@ -221,21 +209,32 @@ Otin CryptoLibraryn käyttöön Robot Frameworkissa:
 *** Settings ***
 Library    Browser
 Library    CryptoLibrary    variable_decryption=True
+Resource    Keywords.robot
 ```
 
-- [tulokset](outputs/)
+[Testi](../test/front/task6.robot)
+[Log](../outputs/task6/log.html)
+[Report](../outputs/task6/report.html)
 ## Tehtävä 7 Lokitidostot outputs kansioon
 Parin ensimmäisen tehtävän aikana huomasin että testaukset tallentavat tiedostoja esim.playwright-log-1774342903702113800.txt ja mietin heti että tämä ei voi olla paras käytäntö varsinki kun minulla on terveys sovellukseni myös samassa projekti kansiossa. Kysyin tekoälyltä joka ehdotti minulle komentoa joka ohjaa turhat output tiedostot suoraa outputs-kansioon.
 Käytän tätä komentoa aina kun ajan testin muutan tiedoston nimeä tarpeen mukaan mutta loppuosa komennosta pysyy samana
+
 Komento:
+
 ```bash
-robot -d outputs test/front/browser_demo.robot
+robot -d outputs/taskX test/front/taskX.robot
 ```
-Myös tiedostot
+
+Jokaisen testi myös tallentaa:
 - output.xml
 - log.html
 - report.html
- tallentutuvat suoraan [outputs](../outputs/) kansioon
+Nyt jokainen testi saa omat tiedostot omaan outputs kansioon
+
+Esimerkkipolku:
+
+(../outputs/taskX)
+
 ## Tehtävä 8 Github.io
 
 Tässä tehtävässä julkaisin testien raportit Github Pageissa
