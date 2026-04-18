@@ -1,4 +1,4 @@
 *** Variables ***
-${Username}     crypt:2PrYmNtu76VQDdL8OCnxa9vmOLcarIs+7Mnn9T8qjzB39S1h7RKPeZzp6F9ud1LXD5dhdp63
-${Password}     crypt:Cz5oJN/VVRZfrdruNpLnl9eHd22hNQNtHC6yCGvLmBTK0Aq+0bevKJQ5JHutK/5+P5WHm8av7dM=
+${Username}     crypt:Ugv0QpSOTyBrfJd6ydXJmp4ZO40/V+Zp+EZRuGTc003E36w+KrZHSS9yPtYnT3wlFyRIA6l4
+${Password}     crypt:c+B69uhEFQ6ZgsjJFmjpWi8fKqGn7ylCpsgVcN31DG8HtUohoMXqujKKjm+J0yJ50l7Bhy0qivc=
 ${Message}      Hello, Robot Framework!\nHow are you today?
