@@ -28,12 +28,3 @@ dist-ssr
 .venv/
 __pycache__/
 
-#RobotFramework outputs
-outputs/*
-!outputs/output.xml
-!outputs/log.html
-!outputs/report.html
-playwright-log-*.txt
-
-
-

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-04-18T12:48:19.580841" rpa="false" schemaversion="5">
+<suite id="s1" name="Task6" source="C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\test\front\task6.robot">
+<test id="s1-t1" name="Tehtävä 6 - Kirjautuminen salatuilla tunnuksilla" line="7">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-18T12:48:20.703930" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Hanad\\OneDrive\\Ty\u00f6p\u00f6yt\u00e4\\Hyte-FE\\hytefe2\\outputs\\task6\\browser\\traces\\temp\\9e455c0d-c578-4223-a60f-69bd86cde500"}</msg>
+<msg time="2026-04-18T12:48:20.757024" level="INFO">Starting Browser process C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:50692</msg>
+<msg time="2026-04-18T12:48:22.668103" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Hanad\\OneDrive\\Työpöytä\\Hyte-FE\\hytefe2\\outputs\\task6\\browser\\traces\\temp\\9e455c0d-c578-4223-a60f-69bd86cde500"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-18T12:48:20.702945" elapsed="1.965566"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-18T12:48:23.183891" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/login.html</msg>
+<msg time="2026-04-18T12:48:23.184079" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-18T12:48:22.680041" elapsed="0.504287"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-04-18T12:48:23.194623" level="INFO">Title: 'Dear Diary - Login'</msg>
+<arg>==</arg>
+<arg>Dear Diary - Login</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-04-18T12:48:23.185056" elapsed="0.009709"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-18T12:48:23.195845" level="INFO">Types the text '***' in the given field.</msg>
+<arg>id=login-username</arg>
+<arg>${Username}</arg>
+<arg>delay=0.1s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-18T12:48:23.195083" elapsed="0.989903"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>id=login-password</arg>
+<arg>$Password</arg>
+<arg>delay=0.1s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2026-04-18T12:48:24.185487" elapsed="0.906679"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-18T12:48:25.093591" level="INFO">Clicks the element 'css=input[value="Login"]'.</msg>
+<arg>css=input[value="Login"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-18T12:48:25.092799" elapsed="0.053877"/>
+</kw>
+<status status="PASS" start="2026-04-18T12:48:20.699748" elapsed="4.447399"/>
+</test>
+<status status="PASS" start="2026-04-18T12:48:19.583326" elapsed="5.567496"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task6" id="s1" pass="1" fail="0" skip="0">Task6</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

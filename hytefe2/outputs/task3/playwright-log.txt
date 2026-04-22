@@ -1,0 +1,54 @@
+{"level":30,"time":"2026-04-18T08:45:38.610Z","pid":9476,"hostname":"Shotgun","msg":"Listening on 127.0.0.1:58611"}
+{"level":30,"time":"2026-04-18T08:45:39.108Z","pid":9476,"hostname":"Shotgun","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-18T08:45:39.514Z","pid":9476,"hostname":"Shotgun","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-18T08:45:39.516Z","pid":9476,"hostname":"Shotgun","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-18T08:45:39.516Z","pid":9476,"hostname":"Shotgun","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-18T08:45:39.544Z","pid":9476,"hostname":"Shotgun","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-04-18T08:45:39.544Z","pid":9476,"hostname":"Shotgun","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":30,"time":"2026-04-18T08:45:39.545Z","pid":9476,"hostname":"Shotgun","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@9083c375964ccf137e282eea95850a97\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=108d21ea-d094-4334-b758-d663a6ccb25c\"}"}
+{"level":30,"time":"2026-04-18T08:45:39.545Z","pid":9476,"hostname":"Shotgun","msg":"Trace file: "}
+{"level":30,"time":"2026-04-18T08:45:39.630Z","pid":9476,"hostname":"Shotgun","msg":"Setting default timeout for context context=5b94741b-225c-464d-8630-b42d18708876 to 10000"}
+{"level":30,"time":"2026-04-18T08:45:39.631Z","pid":9476,"hostname":"Shotgun","msg":"Changed active context: context=5b94741b-225c-464d-8630-b42d18708876"}
+{"level":30,"time":"2026-04-18T08:45:39.631Z","pid":9476,"hostname":"Shotgun","msg":"End of node method newContext"}
+{"level":30,"time":"2026-04-18T08:45:39.643Z","pid":9476,"hostname":"Shotgun","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-18T08:45:39.644Z","pid":9476,"hostname":"Shotgun","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@9083c375964ccf137e282eea95850a97\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=5b94741b-225c-464d-8630-b42d18708876\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@7bf0e451d5cffdee91d2917c5779bf7f\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"id\":\"browser=108d21ea-d094-4334-b758-d663a6ccb25c\"}"}
+{"level":30,"time":"2026-04-18T08:45:40.040Z","pid":9476,"hostname":"Shotgun","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-18T08:45:40.040Z","pid":9476,"hostname":"Shotgun","msg":"Changed active page"}
+{"level":30,"time":"2026-04-18T08:45:41.263Z","pid":9476,"hostname":"Shotgun","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-18T08:45:41.294Z","pid":9476,"hostname":"Shotgun","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-04-18T08:45:41.294Z","pid":9476,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with [name=\"my-select\"] in page."}
+{"level":30,"time":"2026-04-18T08:45:41.388Z","pid":9476,"hostname":"Shotgun","msg":"Option entries: 4"}
+{"level":30,"time":"2026-04-18T08:45:41.388Z","pid":9476,"hostname":"Shotgun","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-04-18T08:45:41.389Z","pid":9476,"hostname":"Shotgun","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-04-18T08:45:41.394Z","pid":9476,"hostname":"Shotgun","msg":"Start of node method checkCheckbox"}
+{"level":30,"time":"2026-04-18T08:45:41.394Z","pid":9476,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with [id=\"my-check-2\"] in page."}
+{"level":30,"time":"2026-04-18T08:45:41.547Z","pid":9476,"hostname":"Shotgun","msg":"End of node method checkCheckbox"}
+{"level":30,"time":"2026-04-18T08:45:43.557Z","pid":9476,"hostname":"Shotgun","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-04-18T08:45:43.604Z","pid":9476,"hostname":"Shotgun","msg":"Removed page=024a1d66-ddf3-4146-90fe-d139ee6c3451 from context=5b94741b-225c-464d-8630-b42d18708876 page stack"}
+{"level":30,"time":"2026-04-18T08:45:44.267Z","pid":9476,"hostname":"Shotgun","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js:12757:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js:13677:59)
+    at PlaywrightServer.setTimeout (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js:13933:56)
+    at Object.onReceiveHalfClose (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js:12757:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js:13677:59)
+    at PlaywrightServer.setTimeout (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js:13933:56)
+    at Object.onReceiveHalfClose (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================

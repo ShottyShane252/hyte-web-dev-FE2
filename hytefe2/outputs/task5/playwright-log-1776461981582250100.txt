@@ -1,0 +1,13 @@
+{"level":30,"time":"2026-04-17T21:39:43.010Z","pid":15988,"hostname":"Shotgun","msg":"Listening on 127.0.0.1:58837"}
+{"level":30,"time":"2026-04-17T21:39:43.268Z","pid":15988,"hostname":"Shotgun","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-17T21:39:43.627Z","pid":15988,"hostname":"Shotgun","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-17T21:39:43.627Z","pid":15988,"hostname":"Shotgun","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-17T21:39:43.628Z","pid":15988,"hostname":"Shotgun","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-17T21:39:43.641Z","pid":15988,"hostname":"Shotgun","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-17T21:39:43.642Z","pid":15988,"hostname":"Shotgun","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@70a8abbe592e287ce0d136a8a20b1b8e\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=b4c6d65b-6c89-413f-a357-c3c38f956342\"}"}
+{"level":30,"time":"2026-04-17T21:39:43.682Z","pid":15988,"hostname":"Shotgun","msg":"Setting default timeout for context context=c2fb9b05-7ff0-45c4-8b02-bdcf19bf0d1c to 10000"}
+{"level":30,"time":"2026-04-17T21:39:43.683Z","pid":15988,"hostname":"Shotgun","msg":"Changed active context: context=c2fb9b05-7ff0-45c4-8b02-bdcf19bf0d1c"}
+{"level":30,"time":"2026-04-17T21:39:44.008Z","pid":15988,"hostname":"Shotgun","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-17T21:39:44.009Z","pid":15988,"hostname":"Shotgun","msg":"Changed active page"}
+{"level":30,"time":"2026-04-17T21:39:46.141Z","pid":15988,"hostname":"Shotgun","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-17T21:39:48.914Z","pid":15988,"hostname":"Shotgun","msg":"Removed page=0c4bd22d-6de3-4188-9cdb-8088d72f569c from context=c2fb9b05-7ff0-45c4-8b02-bdcf19bf0d1c page stack"}

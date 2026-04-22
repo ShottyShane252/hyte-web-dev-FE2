@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-04-18T12:28:04.226635" rpa="false" schemaversion="5">
+<suite id="s1" name="Task5" source="C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\test\front\task5.robot">
+<test id="s1-t1" name="Tehtävä -Login w/.env" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-18T12:28:04.736768" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Hanad\\OneDrive\\Ty\u00f6p\u00f6yt\u00e4\\Hyte-FE\\hytefe2\\outputs\\task5\\browser\\traces\\temp\\39804770-e14d-417f-8938-6d6e986dad09"}</msg>
+<msg time="2026-04-18T12:28:04.788480" level="INFO">Starting Browser process C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:59750</msg>
+<msg time="2026-04-18T12:28:07.218110" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Hanad\\OneDrive\\Työpöytä\\Hyte-FE\\hytefe2\\outputs\\task5\\browser\\traces\\temp\\39804770-e14d-417f-8938-6d6e986dad09"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-18T12:28:04.735634" elapsed="2.482810"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-18T12:28:07.737368" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/login.html</msg>
+<msg time="2026-04-18T12:28:07.737780" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-18T12:28:07.231000" elapsed="0.507103"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-04-18T12:28:07.752962" level="INFO">Title: 'Dear Diary - Login'</msg>
+<arg>==</arg>
+<arg>Dear Diary - Login</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-04-18T12:28:07.738744" elapsed="0.014430"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-18T12:28:07.755178" level="INFO">Types the text 'hanadm' in the given field.</msg>
+<arg>id=login-username</arg>
+<arg>${Username}</arg>
+<arg>delay=0.1s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-18T12:28:07.753819" elapsed="1.129834"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>id=login-password</arg>
+<arg>$Password</arg>
+<arg>delay=0.1s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2026-04-18T12:28:08.884114" elapsed="0.904111"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-18T12:28:09.790179" level="INFO">Clicks the element 'css=input[value="Login"]'.</msg>
+<arg>css=input[value="Login"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-18T12:28:09.788891" elapsed="0.049127"/>
+</kw>
+<status status="PASS" start="2026-04-18T12:28:04.733865" elapsed="5.104650"/>
+</test>
+<status status="PASS" start="2026-04-18T12:28:04.229445" elapsed="5.614452"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task5" id="s1" pass="1" fail="0" skip="0">Task5</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

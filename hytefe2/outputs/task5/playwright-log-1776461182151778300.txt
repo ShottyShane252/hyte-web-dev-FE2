@@ -1,0 +1,39 @@
+{"level":30,"time":"2026-04-17T21:26:23.459Z","pid":12124,"hostname":"Shotgun","msg":"Listening on 127.0.0.1:53300"}
+{"level":30,"time":"2026-04-17T21:26:23.826Z","pid":12124,"hostname":"Shotgun","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-17T21:26:24.136Z","pid":12124,"hostname":"Shotgun","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-17T21:26:24.136Z","pid":12124,"hostname":"Shotgun","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-17T21:26:24.136Z","pid":12124,"hostname":"Shotgun","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-17T21:26:24.177Z","pid":12124,"hostname":"Shotgun","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-04-17T21:26:24.177Z","pid":12124,"hostname":"Shotgun","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
+{"level":30,"time":"2026-04-17T21:26:24.178Z","pid":12124,"hostname":"Shotgun","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@91b4ea022c030b88d3b30572c3dc20f3\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=7652f264-9f58-4648-97d8-1fbd94274535\"}"}
+{"level":30,"time":"2026-04-17T21:26:24.178Z","pid":12124,"hostname":"Shotgun","msg":"Trace file: "}
+{"level":30,"time":"2026-04-17T21:26:24.203Z","pid":12124,"hostname":"Shotgun","msg":"Setting default timeout for context context=5f9903c2-132a-4758-992d-b8470dd932b2 to 10000"}
+{"level":30,"time":"2026-04-17T21:26:24.203Z","pid":12124,"hostname":"Shotgun","msg":"Changed active context: context=5f9903c2-132a-4758-992d-b8470dd932b2"}
+{"level":30,"time":"2026-04-17T21:26:24.204Z","pid":12124,"hostname":"Shotgun","msg":"End of node method newContext"}
+{"level":30,"time":"2026-04-17T21:26:24.222Z","pid":12124,"hostname":"Shotgun","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-17T21:26:24.223Z","pid":12124,"hostname":"Shotgun","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@91b4ea022c030b88d3b30572c3dc20f3\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=5f9903c2-132a-4758-992d-b8470dd932b2\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@5152bfb21b2bb4393eddead6bf3c2d80\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}},\"traceFile\":\"\"}],\"id\":\"browser=7652f264-9f58-4648-97d8-1fbd94274535\"}"}
+{"level":30,"time":"2026-04-17T21:26:24.495Z","pid":12124,"hostname":"Shotgun","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-17T21:26:24.495Z","pid":12124,"hostname":"Shotgun","msg":"Changed active page"}
+{"level":30,"time":"2026-04-17T21:26:26.688Z","pid":12124,"hostname":"Shotgun","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-17T21:26:26.710Z","pid":12124,"hostname":"Shotgun","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-04-17T21:26:26.711Z","pid":12124,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with id=login-username in page."}
+{"level":30,"time":"2026-04-17T21:26:26.757Z","pid":12124,"hostname":"Shotgun","msg":"End of node method clearText"}
+{"level":30,"time":"2026-04-17T21:26:26.763Z","pid":12124,"hostname":"Shotgun","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-04-17T21:26:26.763Z","pid":12124,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with id=login-password in page."}
+{"level":30,"time":"2026-04-17T21:26:26.779Z","pid":12124,"hostname":"Shotgun","msg":"End of node method clearText"}
+{"level":30,"time":"2026-04-17T21:26:26.788Z","pid":12124,"hostname":"Shotgun","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-17T21:26:26.788Z","pid":12124,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with id=login-username in page."}
+{"level":30,"time":"2026-04-17T21:26:27.618Z","pid":12124,"hostname":"Shotgun","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-17T21:26:27.622Z","pid":12124,"hostname":"Shotgun","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-17T21:26:27.622Z","pid":12124,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with id=login-password in page."}
+{"level":30,"time":"2026-04-17T21:26:28.516Z","pid":12124,"hostname":"Shotgun","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-17T21:26:28.525Z","pid":12124,"hostname":"Shotgun","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2026-04-17T21:26:28.526Z","pid":12124,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with id=login-username in page."}
+{"level":30,"time":"2026-04-17T21:26:28.576Z","pid":12124,"hostname":"Shotgun","msg":"Retrieved dom property for element id=login-username containing Hanad"}
+{"level":30,"time":"2026-04-17T21:26:28.577Z","pid":12124,"hostname":"Shotgun","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2026-04-17T21:26:28.581Z","pid":12124,"hostname":"Shotgun","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-17T21:26:28.581Z","pid":12124,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with css=input[value=\"Login\"] in page."}
+{"level":30,"time":"2026-04-17T21:26:28.616Z","pid":12124,"hostname":"Shotgun","msg":"End of node method click"}
+{"level":30,"time":"2026-04-17T21:26:29.623Z","pid":12124,"hostname":"Shotgun","msg":"Start of node method goTo"}
+{"level":30,"time":"2026-04-17T21:26:29.727Z","pid":12124,"hostname":"Shotgun","msg":"End of node method goTo"}
+{"level":30,"time":"2026-04-17T21:27:03.912Z","pid":12124,"hostname":"Shotgun","msg":"Removed page=847c8411-bb46-4671-80ff-b7bcb8483bfb from context=5f9903c2-132a-4758-992d-b8470dd932b2 page stack"}

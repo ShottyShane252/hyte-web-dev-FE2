@@ -1,0 +1,16 @@
+{"level":30,"time":"2026-04-18T09:48:03.189Z","pid":17148,"hostname":"Shotgun","msg":"Listening on 127.0.0.1:59035"}
+{"level":30,"time":"2026-04-18T09:48:03.323Z","pid":17148,"hostname":"Shotgun","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-18T09:48:03.643Z","pid":17148,"hostname":"Shotgun","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-18T09:48:03.644Z","pid":17148,"hostname":"Shotgun","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-18T09:48:03.644Z","pid":17148,"hostname":"Shotgun","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-18T09:48:03.654Z","pid":17148,"hostname":"Shotgun","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-18T09:48:03.655Z","pid":17148,"hostname":"Shotgun","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@795cbfc92568bdd3b5f7604bd982f2a7\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=6908d54b-0dcd-4bdb-8654-bddd00fd77ae\"}"}
+{"level":30,"time":"2026-04-18T09:48:03.689Z","pid":17148,"hostname":"Shotgun","msg":"Setting default timeout for context context=f48f03b6-ed7c-4175-b880-c7fa319719a9 to 10000"}
+{"level":30,"time":"2026-04-18T09:48:03.689Z","pid":17148,"hostname":"Shotgun","msg":"Changed active context: context=f48f03b6-ed7c-4175-b880-c7fa319719a9"}
+{"level":30,"time":"2026-04-18T09:48:03.980Z","pid":17148,"hostname":"Shotgun","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-18T09:48:03.980Z","pid":17148,"hostname":"Shotgun","msg":"Changed active page"}
+{"level":30,"time":"2026-04-18T09:48:04.176Z","pid":17148,"hostname":"Shotgun","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-18T09:48:04.198Z","pid":17148,"hostname":"Shotgun","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-18T09:48:04.198Z","pid":17148,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with id=login-username in page."}
+{"level":30,"time":"2026-04-18T09:48:05.180Z","pid":17148,"hostname":"Shotgun","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-18T09:48:08.321Z","pid":17148,"hostname":"Shotgun","msg":"Removed page=31854188-50dc-4e16-a8d1-c952ed3b39d6 from context=f48f03b6-ed7c-4175-b880-c7fa319719a9 page stack"}

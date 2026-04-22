@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-04-18T11:45:36.425229" rpa="false" schemaversion="5">
+<suite id="s1" name="Task3" source="C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\test\front\task3.robot">
+<test id="s1-t1" name="Tehtävä 3 - Web Form testaus" line="5">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-18T11:45:36.969139" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Hanad\\OneDrive\\Ty\u00f6p\u00f6yt\u00e4\\Hyte-FE\\hytefe2\\outputs\\task3\\browser\\traces\\temp\\9f4f99fc-f9a7-41b8-9010-5f2c7b61ad33"}</msg>
+<msg time="2026-04-18T11:45:37.025004" level="INFO">Starting Browser process C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:58611</msg>
+<msg time="2026-04-18T11:45:39.523794" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Hanad\\OneDrive\\Työpöytä\\Hyte-FE\\hytefe2\\outputs\\task3\\browser\\traces\\temp\\9f4f99fc-f9a7-41b8-9010-5f2c7b61ad33"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-18T11:45:36.968084" elapsed="2.556098"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-04-18T11:45:39.544474" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-04-18T11:45:39.637431" level="INFO">Successfully created context. </msg>
+<msg time="2026-04-18T11:45:39.637605" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-04-18T11:45:39.541069" elapsed="0.096993"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-18T11:45:41.269482" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
+<arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-18T11:45:39.642622" elapsed="1.627331"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-04-18T11:45:41.292222" level="INFO">Title: 'Web form'</msg>
+<arg>==</arg>
+<arg>Web form</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-04-18T11:45:41.270620" elapsed="0.021906"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-04-18T11:45:41.295211" level="INFO">Selects the option(s) 2 by attribute SelectAttribute.value from element [name="my-select"].</msg>
+<arg>[name="my-select"]</arg>
+<arg>value</arg>
+<arg>2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-18T11:45:41.293340" elapsed="0.101210"/>
+</kw>
+<kw name="Check Checkbox" owner="Browser">
+<arg>selector=[id="my-check-2"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2026-04-18T11:45:41.395137" elapsed="0.158197"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-18T11:45:43.556763" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-18T11:45:41.554201" elapsed="2.002759"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-04-18T11:45:44.273530" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-18T11:45:43.557594" elapsed="0.716183"/>
+</kw>
+<status status="PASS" start="2026-04-18T11:45:36.966787" elapsed="7.307506"/>
+</test>
+<status status="PASS" start="2026-04-18T11:45:36.428193" elapsed="7.852385"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task3" id="s1" pass="1" fail="0" skip="0">Task3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

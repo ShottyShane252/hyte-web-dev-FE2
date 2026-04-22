@@ -1,0 +1,22 @@
+{"level":30,"time":"2026-04-18T09:28:06.515Z","pid":5056,"hostname":"Shotgun","msg":"Listening on 127.0.0.1:59750"}
+{"level":30,"time":"2026-04-18T09:28:06.886Z","pid":5056,"hostname":"Shotgun","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-18T09:28:07.214Z","pid":5056,"hostname":"Shotgun","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-18T09:28:07.215Z","pid":5056,"hostname":"Shotgun","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-18T09:28:07.215Z","pid":5056,"hostname":"Shotgun","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-18T09:28:07.235Z","pid":5056,"hostname":"Shotgun","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-18T09:28:07.235Z","pid":5056,"hostname":"Shotgun","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@e8fb7f28438677d9068d7813fa44be11\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=88abe1ca-ac47-42dc-b176-685146b059a8\"}"}
+{"level":30,"time":"2026-04-18T09:28:07.272Z","pid":5056,"hostname":"Shotgun","msg":"Setting default timeout for context context=5625497c-d204-4430-949a-c39722a4eef8 to 10000"}
+{"level":30,"time":"2026-04-18T09:28:07.273Z","pid":5056,"hostname":"Shotgun","msg":"Changed active context: context=5625497c-d204-4430-949a-c39722a4eef8"}
+{"level":30,"time":"2026-04-18T09:28:07.548Z","pid":5056,"hostname":"Shotgun","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-18T09:28:07.548Z","pid":5056,"hostname":"Shotgun","msg":"Changed active page"}
+{"level":30,"time":"2026-04-18T09:28:07.732Z","pid":5056,"hostname":"Shotgun","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-18T09:28:07.757Z","pid":5056,"hostname":"Shotgun","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-18T09:28:07.757Z","pid":5056,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with id=login-username in page."}
+{"level":30,"time":"2026-04-18T09:28:08.881Z","pid":5056,"hostname":"Shotgun","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-18T09:28:08.885Z","pid":5056,"hostname":"Shotgun","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-18T09:28:08.885Z","pid":5056,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with id=login-password in page."}
+{"level":30,"time":"2026-04-18T09:28:09.785Z","pid":5056,"hostname":"Shotgun","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-18T09:28:09.791Z","pid":5056,"hostname":"Shotgun","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-18T09:28:09.792Z","pid":5056,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with css=input[value=\"Login\"] in page."}
+{"level":30,"time":"2026-04-18T09:28:09.835Z","pid":5056,"hostname":"Shotgun","msg":"End of node method click"}
+{"level":30,"time":"2026-04-18T09:28:14.412Z","pid":5056,"hostname":"Shotgun","msg":"Removed page=476f6ea3-8c58-4e7d-b132-83ed66ec437e from context=5625497c-d204-4430-949a-c39722a4eef8 page stack"}

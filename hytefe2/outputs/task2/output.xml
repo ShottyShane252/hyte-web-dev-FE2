@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-04-18T11:39:48.201251" rpa="false" schemaversion="5">
+<suite id="s1" name="Task2" source="C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\test\front\task2.robot">
+<test id="s1-t1" name="Tehtävä 2 - Kirjautumistesti" line="8">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-18T11:39:48.771063" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Hanad\\OneDrive\\Ty\u00f6p\u00f6yt\u00e4\\Hyte-FE\\hytefe2\\outputs\\task2\\browser\\traces\\temp\\5e4bc15a-0152-432b-81a8-48e43e0982dd"}</msg>
+<msg time="2026-04-18T11:39:48.835648" level="INFO">Starting Browser process C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:52078</msg>
+<msg time="2026-04-18T11:39:51.370568" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Hanad\\OneDrive\\Työpöytä\\Hyte-FE\\hytefe2\\outputs\\task2\\browser\\traces\\temp\\5e4bc15a-0152-432b-81a8-48e43e0982dd"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-18T11:39:48.769837" elapsed="2.601188"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-18T11:39:52.086614" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/login.html</msg>
+<msg time="2026-04-18T11:39:52.086786" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-18T11:39:51.380798" elapsed="0.706298"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-04-18T11:39:52.105425" level="INFO">Title: 'Dear Diary - Login'</msg>
+<arg>==</arg>
+<arg>Dear Diary - Login</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-04-18T11:39:52.087871" elapsed="0.017760"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-18T11:39:52.108285" level="INFO">Types the text 'hanadm' in the given field.</msg>
+<arg>id=login-username</arg>
+<arg>hanadm</arg>
+<arg>delay=0.1s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-18T11:39:52.106447" elapsed="1.186534"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>id=login-password</arg>
+<arg>$PASSWORD</arg>
+<arg>delay=0.1s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2026-04-18T11:39:53.293574" elapsed="0.935851"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-18T11:39:54.245178" level="INFO">Clicks the element 'css=input[value="Login"]'.</msg>
+<arg>selector=css=input[value="Login"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-18T11:39:54.243629" elapsed="0.063998"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-04-18T11:39:54.827119" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-18T11:39:54.308398" elapsed="0.519078"/>
+</kw>
+<status status="PASS" start="2026-04-18T11:39:48.768127" elapsed="6.061294"/>
+</test>
+<status status="PASS" start="2026-04-18T11:39:48.205486" elapsed="6.634583"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task2" id="s1" pass="1" fail="0" skip="0">Task2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

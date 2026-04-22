@@ -1,0 +1,50 @@
+{"level":30,"time":"2026-04-18T08:39:50.562Z","pid":21900,"hostname":"Shotgun","msg":"Listening on 127.0.0.1:52078"}
+{"level":30,"time":"2026-04-18T08:39:50.904Z","pid":21900,"hostname":"Shotgun","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-18T08:39:51.348Z","pid":21900,"hostname":"Shotgun","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-18T08:39:51.350Z","pid":21900,"hostname":"Shotgun","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-18T08:39:51.350Z","pid":21900,"hostname":"Shotgun","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-18T08:39:51.409Z","pid":21900,"hostname":"Shotgun","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-18T08:39:51.410Z","pid":21900,"hostname":"Shotgun","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@b4ba30c197bebf0b67a320f03309030f\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=b85d1166-bcd9-4965-9262-b2357cfd5578\"}"}
+{"level":30,"time":"2026-04-18T08:39:51.447Z","pid":21900,"hostname":"Shotgun","msg":"Setting default timeout for context context=59bb6757-69f6-4076-8f7e-5eea69664c23 to 10000"}
+{"level":30,"time":"2026-04-18T08:39:51.448Z","pid":21900,"hostname":"Shotgun","msg":"Changed active context: context=59bb6757-69f6-4076-8f7e-5eea69664c23"}
+{"level":30,"time":"2026-04-18T08:39:51.823Z","pid":21900,"hostname":"Shotgun","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-18T08:39:51.823Z","pid":21900,"hostname":"Shotgun","msg":"Changed active page"}
+{"level":30,"time":"2026-04-18T08:39:52.082Z","pid":21900,"hostname":"Shotgun","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-18T08:39:52.113Z","pid":21900,"hostname":"Shotgun","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-18T08:39:52.114Z","pid":21900,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with id=login-username in page."}
+{"level":30,"time":"2026-04-18T08:39:53.290Z","pid":21900,"hostname":"Shotgun","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-18T08:39:53.296Z","pid":21900,"hostname":"Shotgun","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-18T08:39:53.296Z","pid":21900,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with id=login-password in page."}
+{"level":30,"time":"2026-04-18T08:39:54.226Z","pid":21900,"hostname":"Shotgun","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-18T08:39:54.247Z","pid":21900,"hostname":"Shotgun","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-18T08:39:54.247Z","pid":21900,"hostname":"Shotgun","msg":"Strict mode is enabled, find Locator with css=input[value=\"Login\"] in page."}
+{"level":30,"time":"2026-04-18T08:39:54.305Z","pid":21900,"hostname":"Shotgun","msg":"End of node method click"}
+{"level":30,"time":"2026-04-18T08:39:54.311Z","pid":21900,"hostname":"Shotgun","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-04-18T08:39:54.336Z","pid":21900,"hostname":"Shotgun","msg":"Removed page=1565b51f-1468-4f87-afb8-8f646b9db40a from context=59bb6757-69f6-4076-8f7e-5eea69664c23 page stack"}
+{"level":30,"time":"2026-04-18T08:39:54.824Z","pid":21900,"hostname":"Shotgun","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js:12757:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js:13677:59)
+    at PlaywrightServer.setTimeout (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js:13933:56)
+    at Object.onReceiveHalfClose (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js:12757:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js:13677:59)
+    at PlaywrightServer.setTimeout (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\index.js:13933:56)
+    at Object.onReceiveHalfClose (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Hanad\OneDrive\Työpöytä\Hyte-FE\hytefe2\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
