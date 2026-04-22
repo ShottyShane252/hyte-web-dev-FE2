@@ -260,7 +260,7 @@ Tässä tehtävässä julkaisin testien raportit Github Pageissa
 Asetin sen käyttämään testaus2 haaraa ja juurikansiota (/root)
 
 Outputs löydät näistä linkeistä:
-- [Outputs](../hytefe2/outputs/)
+- [Outputs](../hytefe2/outputs/) (Lisää linkkiin taskX esim https://shottyshane252.github.io/hyte-web-dev-FE2/hytefe2/hytefe2/outputs/task2)
 ## Tehtävä 9 - Backend testaus (API)
 
 ### Kuvaus
